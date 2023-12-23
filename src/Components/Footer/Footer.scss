@@ -1,0 +1,10 @@
+@import '../../GlobalStyles/Variables.scss';
+footer {
+    padding: 20px 0;
+    background-color: $primary-dark-color;
+    .container {
+        h4 {
+            color: $white-color;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+@import '../../GlobalStyles/BreakPoints.scss';
+@import '../../GlobalStyles/Variables.scss';
+.place-details {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   width: 100vw;
+   height: 100%;
+   padding: 15px;
+   margin-top: 25px;
+   overflow-y: auto;
+   ::-webkit-scrollbar {
+      display: none;
+   }
+   @include md {
+      width: 50%;
+   }
+   .no-data {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      h4 {
+         text-transform: capitalize;
+         font-weight: 700;
+         color: $primary-dark-color;
+      }
+   }
+   .card {
+      width: 100%;
+      max-width: 390px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 15px 1px #99999973;
+      background-image: linear-gradient(109deg, #9b4aff, transparent);
+      @include xl {
+         width: 50%;
+         max-width: 300px;
+      } 
+    .name {
+      padding: 5px 10px;
+      color: $white-color;
+      text-transform: capitalize;
+      text-shadow: 2px 2px 9px #bf08b6;
+    }
+    .rank {
+      font-size: 12px;
+      text-transform: capitalize;
+      color: $primary-dark-color;
+      text-shadow: 2px 2px 9px $white-color;
+      font-weight: 700;
+    }
+    }
+    img {
+      width: 100%;
+      margin-top: 15px;
+      height: 200px;
+    }
+    .isimg {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:#e2caff;
+      color: $white-color;
+      text-transform: capitalize;
+    }
+    .card-content {
+      padding: 15px;
+      .price {
+         font-size: 18px;
+         text-transform: capitalize;
+         color: $primary-dark-color;
+         text-shadow: 2px 2px 9px $white-color;
+         font-weight: 700;
+      }
+      .cuisine {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 5px;
+         margin: 10px 0;
+         li {
+            color: $primary-dark-color;
+            font-weight: 700;
+            list-style: none;
+            background-image: linear-gradient(to right, #ff8bec, transparent);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-shadow: 2px 2px 9px $white-color;
+         }
+      }
+      .address {
+         display: flex;
+         font-size: 12px;
+         align-items: center;
+         gap: 5px;
+         color: $primary-dark-color;
+         text-shadow: 2px 2px 9px $secondary-light-color;
+         font-weight: 700;
+     }
+         svg {
+            width: 12px;
+         }
+      }
+      }
+      .phone-website {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-top: 10px;
+         border-radius: 6px;
+         overflow: hidden;
+         .phone, .website {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: $primary-dark-color;
+            padding: 3px 8px;
+         }
+         .phone {
+            background-image: linear-gradient(to right, $secondary-light-color, transparent);
+         }
+         .website {
+            background-image: linear-gradient(to left, $secondary-light-color, transparent);
+         }
+      }

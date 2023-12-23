@@ -1,0 +1,74 @@
+@import '../../GlobalStyles/BreakPoints.scss';
+@import '../../GlobalStyles/Variables.scss';
+.loading {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include md {
+        width: 50%;
+     }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 211px;
+        height: 7px;
+        background-color: #ebebeb;
+        box-shadow: 3px 3px 15px 4px rgb(153 153 153 / 21%);
+        z-index: 5;
+        background-image: linear-gradient(to right,transparent 20px, $primary-color 40px, transparent 60px);
+        background-size: 200px;
+        background-position: 0px;
+        animation-name: line;
+    }
+    .spin, &::before, h4 {
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }  
+    .spin {
+        background-image: linear-gradient(rgba(190, 185, 185, 0.384), rgba(255, 255, 255, 0.315), rgba(192, 190, 190, 0.459));
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 15px 4px rgba(153, 153, 153, 0.212);
+        border: 30px solid #ffffff57;
+        animation-name: load;
+    }
+    h4 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        color: $secondary-color;
+        text-shadow: 3px 3px 10px #000;
+        animation-name: head;
+        z-index: 1;
+       
+    }
+}
+
+@keyframes load {
+    100% {
+       transform: rotate(180deg);
+       border-width: 0;
+    }
+}
+@keyframes head {
+    100% {
+        text-shadow: none;
+        font-size: 40px;
+    }
+}
+@keyframes line {
+    100% {
+        background-position: 130px;
+        
+    }
+}

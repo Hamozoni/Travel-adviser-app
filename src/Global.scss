@@ -1,0 +1,36 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Commissioner:wght@400;500;700&family=DM+Sans:ital,wght@0,700;1,400&family=Kumbh+Sans:wght@400;500;600;700;800;900&family=League+Spartan:wght@500;600;800;900&family=Nunito+Sans:ital,wght@0,300;0,600;1,700&family=Nunito:ital,wght@0,500;0,700;1,400&family=Poppins:wght@500;700&display=swap');
+ @import './GlobalStyles/BreakPoints.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+img, picture {
+    max-width: 100%;
+    object-fit: cover;
+}
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+#root {
+    overflow: hidden;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+button, input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
