@@ -7,8 +7,6 @@
    gap: 20px;
    width: 100vw;
    height: 100%;
-   padding: 15px;
-   margin-top: 25px;
    overflow-y: auto;
    ::-webkit-scrollbar {
       display: none;
@@ -37,10 +35,8 @@
          max-width: 300px;
       } 
     .name {
-      padding: 5px 10px;
       color: $primary-dark-color;
       text-transform: capitalize;
-      text-shadow: 2px 2px 9px #bf08b6;
     }
     .rank {
       font-size: 14px;

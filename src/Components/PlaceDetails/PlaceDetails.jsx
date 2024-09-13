@@ -12,9 +12,9 @@ const PlaceDetails = ({ places, type }) => {
                 </div> :
                 <> {places?.map((place,i)=>(
                     <div className="card" key={i} >
-                        <h3 className="name">{place?.name}</h3>
                         {place?.photo?.images?.large?.url? <img src={place?.photo?.images?.small?.url} alt={place?.name} />: <div className='isimg'>no image to show</div>}
                         <div className="card-content">
+                            <h3 className="name">{place?.name}</h3>
                             <h4 className="price">{place?.price && 'Price Range: '}{place?.price}</h4>
                             <span className='rank'>{ place?.ranking }</span>
                                 <ul className="cuisine">
