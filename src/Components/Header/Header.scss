@@ -9,11 +9,11 @@ header.header {
         justify-content: flex-end;
         height: 65px;
         .logo {
-            font-size: 16==20px;
+            font-size: 18px;
             position: absolute;
             left: 10px;
             color: $primary-dark-color;
-            font-weight: 700;
+            font-weight: bold;
             text-transform: uppercase;
             min-width: fit-content;
             letter-spacing: -1px;
@@ -31,7 +31,7 @@ header.header {
             z-index: 99;
             transition: all .5s ease-in-out;
             svg {
-                color: $white-color;
+                color: $secondary-color;
                 cursor: pointer;
                 &.rotate {
                     animation: rotates 2s forwards;
@@ -63,8 +63,8 @@ header.header {
             input {
                 width: 100%;
                 background-color: transparent;
-                caret-color: $white-color;
-                color: $white-color;
+                caret-color:$secondary-color;
+                color: $secondary-color;
 
                 &::placeholder {
                     color: $secondary-light-color;
