@@ -29,7 +29,7 @@
       max-width: 390px;
       border-radius: 5px;
       box-shadow: 2px 2px 15px 1px #99999973;
-      // background-image: linear-gradient(109deg, #9b4aff, transparent);
+      overflow: hidden;
       @include xl {
          width: 50%;
          max-width: 300px;
@@ -48,7 +48,6 @@
     }
     img {
       width: 100%;
-      margin-top: 15px;
       height: 200px;
     }
     .isimg {
@@ -79,7 +78,7 @@
             color: $primary-dark-color;
             font-weight: 700;
             list-style: none;
-            // background-image: linear-gradient(to right, #ff8bec, transparent);
+            background-color: #e2caff;
             padding: 5px 10px;
             border-radius: 5px;
             font-size: 12px;
@@ -110,14 +109,9 @@
          .phone, .website {
             display: flex;
             align-items: center;
+            background-color: #e2caff;
             gap: 8px;
             color: $primary-dark-color;
             padding: 3px 8px;
          }
-         // .phone {
-         //    background-image: linear-gradient(to right, $secondary-light-color, transparent);
-         // }
-         // .website {
-         //    background-image: linear-gradient(to left, $secondary-light-color, transparent);
-         // }
       }
