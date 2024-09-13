@@ -1,10 +1,10 @@
 @import '../../GlobalStyles/BreakPoints.scss';
 @import '../../GlobalStyles/Variables.scss';
 .place-details {
+   padding: 15px;
    display: flex;
-   justify-content: center;
    flex-wrap: wrap;
-   gap: 20px;
+   gap: 15px;
    width: 100vw;
    height: 100%;
    overflow-y: auto;
@@ -43,7 +43,7 @@
       text-transform: capitalize;
       color: $primary-dark-color;
       text-shadow: 2px 2px 9px $white-color;
-      font-weight: 700;
+      font-weight: 500;
     }
     }
     img {

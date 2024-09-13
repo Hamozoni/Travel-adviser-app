@@ -1,7 +1,7 @@
 @import '../../GlobalStyles/BreakPoints.scss';
 @import '../../GlobalStyles/Variables.scss';
 header.header {
-    background-color: $secondary-light-color;
+    background-color:rgb(226, 226, 226);
     .container {
         position: relative;
         display: flex;
@@ -9,12 +9,12 @@ header.header {
         justify-content: flex-end;
         height: 65px;
         .logo {
-            font-size: 18px;
+            font-size: 24px;
             position: absolute;
             left: 10px;
             color: $primary-dark-color;
-            font-weight: bold;
-            text-transform: uppercase;
+            font-weight: bolder;
+            text-transform: capitalize;
             min-width: fit-content;
             letter-spacing: -1px;
         }
@@ -96,9 +96,9 @@ header.header {
                 outline: none;
                 font-size: 16px;
                 font-weight: bold;
-                color: $primary-color;
+                color: $primary-dark-color;
                 background-image: linear-gradient(to bottom, $secondary-light-color, transparent);
-                padding: 2px 5px;
+                padding: 12px;
                 border-radius: 6px;
                 text-transform: capitalize;
                 cursor: pointer;

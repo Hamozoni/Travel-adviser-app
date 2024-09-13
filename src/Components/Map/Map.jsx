@@ -22,13 +22,13 @@ const Map = ({ setCoordinates, setBounds, coordinates, places }) => {
                         lat={Number(place?.latitude)}
                         lng={Number(place?.longitude)}
                     >
-                        <h4 className="name">
-                            {place?.name}
-                        </h4>
                         <img 
                             src={place?.photo?.images?.small?.url}
                             alt={place?.name}
                             /> 
+                        <h4 className="name">
+                            {place?.name}
+                        </h4>
                         <p>{place?.Rating}</p>                  
                     </div>
                 ))}
