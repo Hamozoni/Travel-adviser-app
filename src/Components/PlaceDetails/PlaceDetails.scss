@@ -31,14 +31,14 @@
       max-width: 390px;
       border-radius: 5px;
       box-shadow: 2px 2px 15px 1px #99999973;
-      background-image: linear-gradient(109deg, #9b4aff, transparent);
+      // background-image: linear-gradient(109deg, #9b4aff, transparent);
       @include xl {
          width: 50%;
          max-width: 300px;
       } 
     .name {
       padding: 5px 10px;
-      color: $white-color;
+      color: $primary-dark-color;
       text-transform: capitalize;
       text-shadow: 2px 2px 9px #bf08b6;
     }
@@ -83,7 +83,7 @@
             color: $primary-dark-color;
             font-weight: 700;
             list-style: none;
-            background-image: linear-gradient(to right, #ff8bec, transparent);
+            // background-image: linear-gradient(to right, #ff8bec, transparent);
             padding: 5px 10px;
             border-radius: 5px;
             font-size: 12px;
@@ -118,10 +118,10 @@
             color: $primary-dark-color;
             padding: 3px 8px;
          }
-         .phone {
-            background-image: linear-gradient(to right, $secondary-light-color, transparent);
-         }
-         .website {
-            background-image: linear-gradient(to left, $secondary-light-color, transparent);
-         }
+         // .phone {
+         //    background-image: linear-gradient(to right, $secondary-light-color, transparent);
+         // }
+         // .website {
+         //    background-image: linear-gradient(to left, $secondary-light-color, transparent);
+         // }
       }
