@@ -1,7 +1,7 @@
 @import '../../GlobalStyles/BreakPoints.scss';
 @import '../../GlobalStyles/Variables.scss';
 header.header {
-    background-image: linear-gradient(to top, $secondary-light-color, transparent);
+    background-color: $secondary-light-color;
     .container {
         position: relative;
         display: flex;
